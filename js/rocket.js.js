@@ -26,7 +26,7 @@ var changeState = function (state) {
           console.log('randomNumber:', randomNumber)
 
             // success
-          if (randomNumber > 5) {
+          if (randomNumber > 9) {
             changeState(4);
           } else {
             changeState(5); // oh noo
