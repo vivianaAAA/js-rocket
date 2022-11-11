@@ -13,7 +13,8 @@ var changeState = function (state) {
     timer = setInterval(function(){
        countDownNumber = countDownNumber -1;
       document.getElementById('countDown').innerHTML = countDownNumber;
-    
+
+
     if (countDownNumber <= 0) {
       changeState(3);
     };
@@ -26,7 +27,7 @@ var changeState = function (state) {
           console.log('randomNumber:', randomNumber)
 
             // success
-          if (randomNumber > 9) {
+          if (randomNumber > 4) {
             changeState(4);
           } else {
             changeState(5); // oh noo
