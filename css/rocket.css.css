@@ -10,7 +10,19 @@
 
 .interface{
 	text-align: center;
-	padding: 20px;
+	padding: 150px;
+	font-family: 'Amatic SC', cursive;
+
+}
+
+a.button{
+	display: inline-block;
+	background-color: red;
+	color: black;
+	text-transform:uppercase ;
+	padding: 50px;
+	text-decoration: none;
+	border-radius: 90%;
 
 }
 
@@ -86,6 +98,7 @@ body.body-state5 .rocket{
 	width: 600px;
 	height: 300px;
 	margin-left: -300px;
+	transition: top 10000ms ;
 
 
 }

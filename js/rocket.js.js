@@ -14,6 +14,20 @@ var changeState = function (state) {
        countDownNumber = countDownNumber -1;
       document.getElementById('countDown').innerHTML = countDownNumber;
 
+      if (countDownNumber == 5) {
+        // be nervous
+        document.getElementById('nervous').className = 'nervous show';
+      } else {
+         document.getElementById('nervous').className = 'nervous';
+      }
+
+    if (countDownNumber == 3) {
+        // cant wait
+       document.getElementById('cant-wait').className = 'cant-wait show';
+
+      } else {
+         document.getElementById('cant-wait').className = 'cant-wait';
+      }
 
     if (countDownNumber <= 0) {
       changeState(3);
@@ -27,7 +41,7 @@ var changeState = function (state) {
           console.log('randomNumber:', randomNumber)
 
             // success
-          if (randomNumber > 4) {
+          if (randomNumber > 9) {
             changeState(4);
           } else {
             changeState(5); // oh noo
